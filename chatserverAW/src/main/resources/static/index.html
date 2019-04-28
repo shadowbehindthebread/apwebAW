@@ -1,32 +1,22 @@
-<head>AW test page</head> 
+
 <body>
     <p>
-        Hello World!
-
-        <br>
 
         Please enter your name: 
-        <input id = "myinput">
-        <button onclick = "action()">Say hello!</button> 
+        <input id = "username" value = "Audrey">
+        <button id = "namebutton" onclick = "login()">Login</button> 
 
         <br>
 
-        <textarea id = "result">Hello here's some stuff to replace yay
-        </textarea>
+        <textarea id = "history" rows = 10 cols = 50>Welcome!</textarea>
+        
+        <br>
+        
+        <textarea id = "messagebox" rows = 3 cols = 40>Say hello!</textarea>
+        <button id = "send" onclick = "sendMsg()"> Send </button>
 
-        <script>
-            console.log("got here");
-
-            var inputhandle = document.getElementById("myinput");
-            var resulthandle = document.getElementById("result");
-
-            function action() {
-                var string = "Hello " + inputhandle.value + ", I hope you are having a great day!";
-                console.log(string);
-                resulthandle.value = string;
-            }
-
-            console.log("finished parsing script");
+        <script src="script.js">
+           
         </script>
     </p>
 
